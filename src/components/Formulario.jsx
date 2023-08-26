@@ -26,6 +26,7 @@ const Formulario = () => {
 
   return (
     <>
+
     <Form onSubmit={validarInputs}>
       
       <p>O usa tu email para registrarte </p>
