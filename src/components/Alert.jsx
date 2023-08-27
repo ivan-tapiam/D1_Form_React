@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Alert = ({color, msg}) => {
+const Alert = () => {
   return (
     <>
-      <p className={color}>{msg}</p> 
+      
     </>
   )
 }
