@@ -20,3 +20,9 @@
   align-items: center;
   padding: 1rem;
   }
+
+  .container {
+    border: 6px solid #1C6EA4;
+    border-radius: 17px;
+    padding: 2rem;
+  }

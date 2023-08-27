@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 
 const Formulario = () => {
-  const [nombre, setNombre] = useState('')
+  const [nombre, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [password2, setPassword2] = useState('')
@@ -17,8 +17,8 @@ const Formulario = () => {
       setError(true)
       return
     }
-  setError(false)
-  setNombre('');
+  setError(false);
+  setName('');
   setEmail('');
   setPassword('');
   setPassword2('');
@@ -26,13 +26,14 @@ const Formulario = () => {
 
   return (
     <>
+    
 
     <Form onSubmit={validarInfo}>
       
       <p>O usa tu email para registrarte </p>
       <Form.Group className="mb-3" controlId="formBasicName">
         <input className='Form.Control' type="name" placeholder="Nombre" 
-        onChange={(e) => setNombre(e.target.value)}
+        onChange={(e) => setName(e.target.value)}
         value={nombre}/>
       </Form.Group>
       
@@ -61,6 +62,7 @@ const Formulario = () => {
       </Button>
     </div>
     </Form>
+        
     {error ? <p className='error'>Debes ingresar todos los campos</p> : null}
     </>
   )
