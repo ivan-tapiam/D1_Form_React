@@ -10,7 +10,7 @@ const Formulario = () => {
   const [password2, setPassword2] = useState('')
   const [error, setError] = useState(false)
   
-  const validarInputs = (e) => {
+  const validarInfo = (e) => {
     e.preventDefault()
     
     if (nombre.trim() === '' || email.trim() === '' || password.trim() === '' || password2.trim() === '') {
@@ -27,7 +27,7 @@ const Formulario = () => {
   return (
     <>
 
-    <Form onSubmit={validarInputs}>
+    <Form onSubmit={validarInfo}>
       
       <p>O usa tu email para registrarte </p>
       <Form.Group className="mb-3" controlId="formBasicName">
